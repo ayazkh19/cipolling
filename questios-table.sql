@@ -1,0 +1,3 @@
+CREATE TABLE `ci_polls`.`questions` ( `id` INT NOT NULL AUTO_INCREMENT , `question_text` VARCHAR(255) NOT NULL , `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , `choice_id` INT NULL DEFAULT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+ALTER TABLE `questions` ADD `slug` INT NOT NULL AFTER `id`;
